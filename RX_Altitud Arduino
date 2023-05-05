@@ -1,4 +1,4 @@
-Codigo receptor: 
+Codigo receptor Altitud: 
 
 #include <SPI.h>
 #include <RF24.h>
