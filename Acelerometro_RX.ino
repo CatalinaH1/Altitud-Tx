@@ -1,12 +1,10 @@
 #include <SPI.h>
 #include <RF24.h>
 
-
 RF24 radio(10,8); // CE, CSN
 const byte address[6] = "00001";
-
-
 float AcX, AcY, AcZ;
+
 void setup() 
 {
 ADCSRA |= (1 << ADPS2) | (1 << ADPS0);
@@ -30,7 +28,7 @@ void loop()
     AcX = datos[0];
     AcY = datos[1];
     AcZ = datos[2];
- Serial.print(AcX);
+  Serial.print(AcX);
   Serial.print(",");
   Serial.print(AcY);
   Serial.print(",");
