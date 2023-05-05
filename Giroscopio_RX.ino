@@ -13,8 +13,7 @@ ADCSRA |= (1 << ADPS2) | (1 << ADPS0);
   radio.setDataRate(RF24_250KBPS);
   radio.setPALevel(RF24_PA_HIGH);
   radio.startListening();
-  Serial.println("Receptor iniciado");  
-}
+  //Serial.println("Receptor iniciado");
 
 
 void loop()
